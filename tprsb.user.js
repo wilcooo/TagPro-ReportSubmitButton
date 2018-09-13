@@ -15,7 +15,7 @@
 tagpro.ready(function() {
 
     // Find the existing popup, selection dropdown and cancel button.
-    var player = $("div#kick").attr("data-id"),
+    var player = () => $("div#kick").attr("data-id"),
         select = $("#kickSelect"),
         cancel = $("#kickCancelButton");
 
@@ -31,7 +31,7 @@ tagpro.ready(function() {
     // Make a click on the button send a report
     submit.click(function(t) {
         tagpro.socket.emit("kick", {
-            playerId: parseInt(player),
+            playerId: parseInt(player()),
             reason: parseInt(select.val())
         });
     });
