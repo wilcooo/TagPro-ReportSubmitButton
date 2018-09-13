@@ -2,7 +2,7 @@
 // @name         TagPro Report Submit Button
 // @description  Show a submit button in the Report popup.
 // @author       Ko
-// @version      1.0
+// @version      1.1
 // @include      *.koalabeast.com:*
 // @include      *.jukejuice.com:*
 // @include      *.newcompte.fr:*
